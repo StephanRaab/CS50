@@ -21,19 +21,20 @@ Let's call this measure *f(n)*.
 
 -----
 
-O(1) -- Constant Time
-O(*log n*) -- Logarithmic Time
-O(*n*) -- Linear Time
-O(*n log n*) -- Linearithmic Time
-O(*n<sup>2</sup>*) -- Quadratic Time
-O(*n<sup>c</sup>*) -- Polynomial Time
-O(*c<sup>n</sup>*) -- Exponential Time
-O(*n!*) -- Factorial Time
-O(*infinite sign*) -- Infinite Time
++ O(1) -- Constant Time
++ O(*log n*) -- Logarithmic Time
++ O(*n*) -- Linear Time
++ O(*n log n*) -- Linearithmic Time
++ O(*n<sup>2</sup>*) -- Quadratic Time
++ O(*n<sup>c</sup>*) -- Polynomial Time
++ O(*c<sup>n</sup>*) -- Exponential Time
++ O(*n!*) -- Factorial Time
++ O(*infinite sign*) -- Infinite Time
 
 ### O(1)
 + Always takes a single operation in the worst case.
-`
+
+```
 int four_for_you(int array[1000])
 {
     return 4;
@@ -43,9 +44,10 @@ int add_two_nums(int a, int b)
 {
     return a + b;
 }
-`
+```
+
 ###O(*n*)
-+ Always takes **n** operations in the worst case
++ Always takes *n* operations in the worst case
 
 ------
 ## Bubble Sort
