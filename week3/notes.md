@@ -87,4 +87,40 @@ In Pseudo Code:
 
 -------
 ## Merge Sort
-+ 
++ In Merge Sort, the idea of the algorithm is to sort smaller arrays and then combine those arrays together (merge them) in sorted order.
++ Merge sort leverages something called **recursion**.
+
+In Pseudo Code:
+    + Sort the left half of the array (assuming *n* > 1)
+    + Sort the right half of the array (assuming *n* > 1)
+    + Merge the two halves together
+
++ **Worst-case scenario**: We have to split *n* elements up and then recombine them, effectively doubling the sorted subarrays as we build them up.
++ **Best-case scenario**: The array is already perfectly sorted. But we still have to split and recombine it back together with this algorithm.
+
+--------
+## Linear Search
++ In Linear Search, the idea of the algorithm is to iterate across the array from left to right, searching for specified element.
+
+In Pseudo Code:
++ Repeat, starting at the first element:
+    + If the first element is what you're looking for (the target), stop.
+    + Otherwise, move to the next element.
+
++ **Worst-case scenario**: We have to look through the entire array of *n* elements, either because the target element is the last element in the array or doesn't exist in the array at all.
++ **Best-case scenario**: The target element is the first element of the array, and so we can stop looking immediately after we start.
+
+---------
+##Binary Search
++ In Binary Search, the idea of the algorithm is to divide and conquer, reducing the search area by half each time, trying to find a target number.
+    + In order to leverage this power however, our array must first be sorted, else we cannot make assumptions about the array's contents.
+
+In Pseudo Code:
++ Repeat until the (sub)array is of size 0:
+    + Calculate the middle point of the current (sub)array
+    + If the target is the middle, stop.
+    + Otherwise, if the target is less than what's in the middle, repeat, changing the end point to be just to the left of the middle.
+    + Otherwise, if the target is greater than what's at the middle, repeat, changing the start point to be just to the right of the middle.
+
++ **Worst-case scenario**: We have to divide a list of *n* elements in half repeatedly to find the target element, either because the target element will be found at the end of the last division or doesn't exist in the array at all.
++ **best-case scenario**: the target element is at the midpoint of the full array, and so we can stop looking immediately after we start.
